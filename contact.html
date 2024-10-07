@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" type="text/css">
     <link rel="icon" href="images/icon.png" type="image/x-icon">
-    <title>JB Coffee Shop</title>
+    <title>Contact Us</title>
 </head>
 <body>
     <header>
-        <h1>JayBan Coffee Shop</h1>
+        <h1>Contact JayBan Coffee Shop</h1>
         <nav aria-label="primary-navigation">
             <ul>
                 <li>
                     <a href="home.html">Home</a>
                 </li>
                 <li>
-                    <a href="home.html#about">About JB</a>
+                    <a href="home.html#about">About <abbr title="JayBan">JB</abbr></a>
                 </li>
                 <li>
                     <a href="home.html#menu">Our Menu</a>
@@ -34,25 +34,26 @@
     </header>
 
     <main>
-
-        <article>
             <section>
                 <h2>Our Contact Form</h2>
                 <form>
-                    <p>
-                        <label for="name">Name: </label>
-                        <input type="text" placeholder="Your Name" name="Name" id="name" required>
-                    </p>
-                    <p>
-                        <label for="email">Email: </label>
-                        <input type="text" placeholder="Your Email" name="Email" id="email" required>
-                    </p>
-                    <p>
-                        <label for="message">Your Message: </label><br>
-                        <textarea name="Message" id="message" cols="40" rows="10" placeholder="Type your Message here" required></textarea>
-                    </p>
-                    <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Send</button>
-                    <button type="reset">Reset</button>
+                    <fieldset>
+                        <legend>Send Us a Message</legend>
+                        <p>
+                            <label for="name">Name: </label>
+                            <input type="text" placeholder="Your Name" name="Name" id="name" required>
+                        </p>
+                        <p>
+                            <label for="email">Email: </label>
+                            <input type="email" placeholder="Your Email" name="Email" id="email" required>
+                        </p>
+                        <p>
+                            <label for="message">Your Message: </label><br>
+                            <textarea name="Message" id="message" cols="40" rows="10" placeholder="Type your Message here" required></textarea>
+                        </p>
+                        <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Send</button>
+                        <button type="reset">Reset</button>
+                    </fieldset>
                 </form>
             </section>
 
@@ -65,7 +66,6 @@
                 </address>
                 <p><em>Phone: <a href="tel:+222354444532">235-444-4532</a></em></p>
             </section>
-        </article>
 
         <a href="">Back to Top</a>
     </main>
